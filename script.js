@@ -9,7 +9,7 @@ function verificar() {
   } else {
     var calculoIdade = pegarAno - Number(texto.value);
     var radios = window.document.getElementsByName("radio");
-    var genero = radios[0].checked ? "mulher" : "homem";
-    resposta.innerHTML = `Detectamos ${genero} com ${calculoIdade} anos (ou que vai fazer ${calculoIdade} anos, este ano) `;
+    var genero = radios[0].checked ? "Mulher" : "Homem";
+    resposta.innerHTML = ` ${genero} com ${calculoIdade} anos (ou que vai fazer ${calculoIdade} anos, este ano) `;
   }
 }
